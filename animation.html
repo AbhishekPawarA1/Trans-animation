@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tom-and-Jerry</title>
+    <style>
+       .tom {
+         /* Tom moves to the right */
+         animation: moveRight 2s linear infinite;
+         animation-delay: 1s; /* Optional delay for a gradual effect */
+       }
+
+       .jerry {
+         /* Jerry moves to the left */
+         animation: moveLeft 2s linear infinite;
+         animation-delay: 1s; /* Optional delay for a gradual effect */
+       }
+
+       /* Keyframes for Tom moving right */
+       @keyframes moveRight {
+         to {
+           transform: translateX(600px); /* Moves right by 20px */
+         }
+       }
+
+       /* Keyframes for Jerry moving left */
+       @keyframes moveLeft {
+         to {
+           transform: translateX(-550px); /* Moves left by 20px */
+         }
+       }
+    </style>
+</head>
+<body>
+    <div style="width: 100%;height: 1000px;display: flex; justify-content: space-around;background: linear-gradient(to right,blue,red);">
+        <div class="tom">
+           <img
+           style="width: 50%;"
+           src="https://purepng.com/public/uploads/large/purepng.com-tom-tom-and-jerrytom-and-jerrytomjerryanimated-seriesin-1940characters-1701528659534hcsgl.png"/>
+        </div>
+        <div class="jerry">
+            <img
+            style="width: 50%;"
+           src="https://th.bing.com/th/id/R.f48685a0a10f10a5078214a8e2ee5a2c?rik=kcbz%2f1vxrKE9yg&riu=http%3a%2f%2fclipart-library.com%2fimages_k%2fjerry-transparent%2fjerry-transparent-3.png&ehk=ApfSAnuoWa8zOvhXDeMfdra%2fJDJsouS9mTSYximSB1g%3d&risl=&pid=ImgRaw&r=0"/>
+        </div>
+    </div>
+</body>
+</html>
